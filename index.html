@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>REST Coffee | Specialty Coffee & Artisan Bakery Glasgow</title>
+  <meta name="description" content="REST Coffee on High St, Glasgow: single-origin espresso, V60 pour-overs, ceremonial matcha, fresh bakes and retail beans. Order ahead via WhatsApp.">
+  <meta name="theme-color" content="#0f172a">
+  <meta property="og:title" content="REST Coffee | Specialty Coffee Glasgow">
+  <meta property="og:description" content="Single-origin espresso, pour-overs, matcha and artisan bakes at 285 High St, Glasgow.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1200&q=80">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CafeOrCoffeeShop",
+    "name": "REST Coffee",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "285 High St",
+      "addressLocality": "Glasgow",
+      "postalCode": "G4 0QS",
+      "addressCountry": "GB"
+    },
+    "email": "restuk.info@gmail.com",
+    "servesCuisine": "Coffee, Bakery",
+    "sameAs": ["https://instagram.com/restcoffeeuk"],
+    "openingHours": ["Mo-Th 08:00-17:00", "Fr 08:00-20:00", "Sa-Su 09:00-18:00"]
+  }
+  </script>
+</head>
+<body>
+  <a href="#menuSection" class="skip-link">Skip to menu</a>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="REST Coffee home">
+        <span class="brand-mark"><i class="fa-solid fa-mug-saucer"></i></span>
+        <span class="brand-text">
+          <strong>REST</strong>
+          <small>Specialty Coffee • Glasgow</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+        <a href="#menuSection" data-filter="All">Coffee & Menu</a>
+        <a href="#menuSection" data-filter="Beans">Retail Beans</a>
+        <a href="#infoSection">Location & Hours</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="themeToggleBtn" aria-label="Toggle light and dark theme">
+          <i id="themeIcon" class="fa-solid fa-moon"></i>
+        </button>
+        <button class="icon-btn cart-btn" id="openCartBtn" aria-label="Open your order">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span id="cartCountBadge" class="badge">0</span>
+        </button>
+        <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mainNav">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="container hero-wrap">
+      <div class="hero reveal">
+        <div class="hero-content">
+          <div class="hero-pills">
+            <span class="pill"><i class="fa-solid fa-location-dot"></i> 285 High St, Glasgow</span>
+            <span class="pill status-pill" id="openStatus" role="status"><span class="dot"></span><span id="openStatusText">Checking hours…</span></span>
+          </div>
+          <h1>Slow down.<br><span class="accent">Sip something special.</span></h1>
+          <p class="hero-sub">Single-origin espresso, precision pour-overs, ceremonial matcha and fresh daily bakes, all in the heart of Glasgow.</p>
+          <div class="hero-cta">
+            <a href="#menuSection" class="btn btn-primary"><i class="fa-solid fa-mug-hot"></i> Explore Menu</a>
+            <a href="https://instagram.com/restcoffeeuk" target="_blank" rel="noopener" class="btn btn-ghost"><i class="fa-brands fa-instagram"></i> @restcoffeeuk</a>
+          </div>
+          <ul class="hero-stats">
+            <li><strong>Single</strong><span>Origin beans</span></li>
+            <li><strong>Daily</strong><span>Fresh bakes</span></li>
+            <li><strong>Alt-milk</strong><span>Always available</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="container features reveal" aria-label="Why REST Coffee">
+      <div class="feature"><i class="fa-solid fa-fire-flame-curved"></i><div><h3>Roasted with care</h3><p>Specialty-grade beans, brewed to bring out their best.</p></div></div>
+      <div class="feature"><i class="fa-solid fa-leaf"></i><div><h3>Vegan friendly</h3><p>Oat, soy and almond milk on every drink.</p></div></div>
+      <div class="feature"><i class="fa-solid fa-wifi"></i><div><h3>Work or relax</h3><p>Free guest Wi-Fi and a calm, cosy space.</p></div></div>
+      <div class="feature"><i class="fa-brands fa-whatsapp"></i><div><h3>Order ahead</h3><p>Send your order on WhatsApp and skip the wait.</p></div></div>
+    </section>
+
+    <!-- Menu -->
+    <section id="menuSection" class="container section">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">What we serve</span>
+          <h2>Our Menu</h2>
+          <p class="muted">Served hot or cold. Choose your milk on each drink.</p>
+        </div>
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="search" id="menuSearch" placeholder="Search coffee, matcha, bakes…" aria-label="Search the menu" autocomplete="off">
+        </div>
+      </div>
+
+      <div class="filters reveal" id="categoryFilterGroup" role="tablist" aria-label="Menu categories"></div>
+
+      <div id="customerMenuGrid" class="menu-grid" aria-live="polite"></div>
+
+      <div id="menuEmpty" class="empty hidden">
+        <i class="fa-solid fa-mug-saucer"></i>
+        <p>Nothing matched your search. Try another word or category.</p>
+        <button class="btn btn-ghost" id="resetFiltersBtn">Reset filters</button>
+      </div>
+    </section>
+
+    <!-- Info -->
+    <section id="infoSection" class="container section">
+      <div class="info-card reveal">
+        <div class="info-col">
+          <span class="eyebrow">Visit REST Coffee</span>
+          <h2>Opening Hours & Info</h2>
+
+          <ul class="hours" id="hoursList" aria-label="Opening hours"></ul>
+
+          <div class="contact-row"><i class="fa-solid fa-map-pin"></i><p>285 High St, Glasgow G4 0QS, United Kingdom</p></div>
+          <div class="contact-row"><i class="fa-solid fa-envelope"></i><a href="mailto:restuk.info@gmail.com">restuk.info@gmail.com</a></div>
+        </div>
+
+        <div class="info-col wifi-card">
+          <div>
+            <h3><i class="fa-solid fa-wifi"></i> Free Guest Wi-Fi</h3>
+            <p class="muted">Work or relax with our high-speed guest Wi-Fi.</p>
+            <div class="wifi-box">
+              <div><span class="muted">Network</span><strong>RestGuest</strong></div>
+              <div>
+                <span class="muted">Password</span>
+                <strong id="wifiPass" class="blurred" data-pass="Restcoffee285">••••••••••••</strong>
+              </div>
+              <div class="wifi-actions">
+                <button class="btn btn-ghost btn-sm" id="wifiRevealBtn"><i class="fa-solid fa-eye"></i> Show</button>
+                <button class="btn btn-ghost btn-sm" id="wifiCopyBtn"><i class="fa-regular fa-copy"></i> Copy</button>
+              </div>
+            </div>
+          </div>
+          <a href="https://maps.app.goo.gl/o3C8qBj3H5Tj6dAbA" target="_blank" rel="noopener" class="btn btn-primary btn-block">
+            <i class="fa-solid fa-diamond-turn-right"></i> Get Directions on Google Maps
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>&copy; <span id="year">2026</span> REST Coffee Glasgow. All rights reserved.</span>
+      <span class="footer-links">
+        <a href="https://instagram.com/restcoffeeuk" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="mailto:restuk.info@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <span>285 High St, Glasgow G4 0QS</span>
+      </span>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTopBtn" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+  <div id="toastContainer" class="toasts" aria-live="polite"></div>
+
+  <!-- Cart Drawer -->
+  <div id="cartDrawer" class="drawer hidden" aria-hidden="true">
+    <div class="drawer-overlay" id="cartOverlay"></div>
+    <aside class="drawer-panel" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+      <div class="drawer-head">
+        <h3 id="cartTitle"><i class="fa-solid fa-bag-shopping"></i> Your Coffee Order</h3>
+        <button class="icon-btn" id="closeCartBtn" aria-label="Close order"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+
+      <div class="drawer-body">
+        <div id="cartItemsContainer" class="cart-items"></div>
+
+        <form id="checkoutForm" class="checkout" novalidate>
+          <div class="segmented" role="radiogroup" aria-label="Order type">
+            <label><input type="radio" name="orderType" value="Pickup" checked><span><i class="fa-solid fa-bag-shopping"></i> Pickup</span></label>
+            <label><input type="radio" name="orderType" value="Dine-in"><span><i class="fa-solid fa-chair"></i> Dine-in</span></label>
+          </div>
+          <label class="field">
+            <span>Your Name *</span>
+            <input type="text" id="cartCustomerName" placeholder="e.g. Alex Smith" autocomplete="name">
+          </label>
+          <label class="field">
+            <span>Phone / WhatsApp *</span>
+            <input type="tel" id="cartCustomerPhone" placeholder="+44 7XXX XXXXXX" autocomplete="tel">
+          </label>
+          <label class="field">
+            <span>Note (optional)</span>
+            <textarea id="cartNote" rows="2" placeholder="Allergies, extra hot, pickup time…"></textarea>
+          </label>
+        </form>
+      </div>
+
+      <div class="drawer-foot">
+        <div class="totals">
+          <div><span>Subtotal</span><span id="cartSubtotal">£0.00</span></div>
+          <div class="grand"><span>Total</span><span id="cartTotal">£0.00</span></div>
+        </div>
+        <button class="btn btn-primary btn-block" id="checkoutBtn"><i class="fa-brands fa-whatsapp"></i> Send Order / Inquiry</button>
+        <button class="link-btn" id="clearCartBtn">Clear order</button>
+      </div>
+    </aside>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
